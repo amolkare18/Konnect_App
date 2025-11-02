@@ -1,3 +1,23 @@
+🚀 How to Set Up and Run the Project Locally
+
+Follow these steps to get a local copy of the project up and running.
+
+🧩 1. Clone the Repository
+   git clone https://github.com/amolkare18/Konnect_App.git
+
+⚙️ 2. Install Dependencies
+   npm install
+
+▶️ 3. Run the Project
+    npm run dev
+
+
+[Link to deployed application](https://konnect-sooty.vercel.app/)
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
