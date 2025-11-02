@@ -1,0 +1,68 @@
+.contact-list {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact container */
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Each contact card box */
+.contact-box {
+  background-color: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.15);
+}
+
+/* Contact text styling */
+.contact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.contact-phone {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .contact-list {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .contact-box {
+    padding: 15px;
+  }
+
+  .contact-name {
+    font-size: 1.1rem;
+  }
+
+  .contact-phone {
+    font-size: 1rem;
+  }
+}

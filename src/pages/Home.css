@@ -1,0 +1,133 @@
+/* General layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header styling */
+.home-header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.brand {
+  color: #4f46e5;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* 🔹 Main layout (home-content) */
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;   /* makes both boxes equal height */
+  width: 90%;
+  max-width: 1200px;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  color:blue;
+  font-size:10px;
+}
+
+/* Simple and clean search bar */
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease;
+}
+
+/* When user focuses on the input */
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Placeholder text style */
+input[type="text"]::placeholder {
+  color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  input[type="text"] {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+}
+
+
+/* 🔹 Contact list and add-contact sections */
+.list-section,
+.add-section {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  flex: 1;
+  min-width: 350px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation for cards */
+.list-section:hover,
+.add-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Make the contact list wider by default */
+.list-section {
+  flex: 1.5;
+}
+
+/* Contact list heading */
+.list-section h2 {
+  color: #4f46e5;
+  margin-bottom: 1rem;
+}
+
+/* Add-contact area */
+.add-section {
+  background: #f9fafb;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .list-section,
+  .add-section {
+    width: 100%;
+  }
+}
